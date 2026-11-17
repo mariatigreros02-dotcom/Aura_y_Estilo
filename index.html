@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="narrative" name="artifact-type"/>
+<meta content="maison" name="design-style"/>
+<title>Aura &amp; Estilo by Cármika — Exposición y Dirección de Arte</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,600&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="css/styles.css" rel="stylesheet"/>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Saltar al contenido principal</a>
+<div class="ambient-backdrop">
+<header class="site-header">
+<div class="container">
+<div class="masthead-top">
+<!-- Variante del logo en negro integrada estéticamente en cartucho marfil sobre fondo oscuro -->
+<button aria-label="Ir a la portada de Aura y Estilo by Cármika" class="brand-lockup" onclick="navigateTo('portada')" type="button">
+<img alt="Logo negro de Aura &amp; Estilo" class="brand-logo-image" src="images/solo-logo-negro.png"/>
+<span class="brand-lockup-text">
+<span class="brand-title-black">Aura &amp; Estilo</span>
+<span class="brand-sub-black">By Cármika</span>
+</span>
+</button>
+<nav aria-label="Navegación principal de cuatro páginas" class="main-nav">
+<button aria-current="page" class="nav-btn" id="nav-portada" onclick="navigateTo('portada')" type="button">
+<span class="nav-num">01</span> Portada
+            </button>
+<button class="nav-btn" id="nav-detras" onclick="navigateTo('detras')" type="button">
+<span class="nav-num">02</span> Detrás de cámara
+            </button>
+<button class="nav-btn" id="nav-galeria" onclick="navigateTo('galeria')" type="button">
+<span class="nav-num">03</span> Hora de la Galería
+            </button>
+<button class="nav-btn" id="nav-identidad" onclick="navigateTo('identidad')" type="button">
+<span class="nav-num">04</span> Identidad de Marca
+            </button>
+</nav>
+</div>
+</div>
+</header>
+<main class="container" id="main-content">
+<!-- ==================== PÁGINA 1: PORTADA / INTRODUCCIÓN ==================== -->
+<section aria-labelledby="portada-title" class="page-view is-active" id="page-portada">
+<p class="kicker">Aura y Estilo by Cármika · Exposición Digital</p>
+<h1 class="display-title" id="portada-title">La estrategia de habitar tu propio estilo</h1>
+<!-- Espacio de reproductor para el video Pre-Galería acompañado ÚNICAMENTE por el subtítulo "Invitación" -->
+<div class="invitation-block">
+<h2 class="invitation-heading">Invitación</h2>
+<div class="video-stage">
+<div class="video-viewport">
+<canvas aria-label="Reproductor visual Pre-Galería Invitación" height="540" id="invitation-canvas" width="960"></canvas>
+<video class="is-loaded" controls="" id="custom-video-el" playsinline="" preload="metadata"><source src="videos/invitacion.mp4" type="video/mp4"/>Tu navegador no puede reproducir este video.</video>
+<div aria-hidden="true" class="video-overlay-brand" id="video-overlay-brand">
+<svg fill="none" height="56" viewbox="0 0 36 42" width="46">
+<path class="stroke-gold" d="M18 3C18 3 6 17.5 6 25.8C6 32.5 11.4 38 18 38C24.6 38 30 32.5 30 25.8C30 17.5 18 3 18 3Z" stroke-width="1.3"></path>
+<circle class="svg-gold" cx="18" cy="26.5" r="2.5"></circle>
+</svg>
+</div>
+</div>
+<div class="video-controls">
+<div class="video-controls-left">
+<button class="ctrl-btn is-primary" id="btn-play-inv" onclick="toggleInvitationPlay()" type="button">
+<span id="play-inv-label">Reproducir</span>
+</button>
+<button aria-pressed="false" class="ctrl-btn" id="btn-audio-inv" onclick="toggleInvitationAudio()" type="button">
+<span id="audio-inv-label">Sonido: Off</span>
+</button>
+</div>
+<div class="progress-wrap">
+<div aria-label="Progreso de reproducción" aria-valuemax="45" aria-valuemin="0" aria-valuenow="0" class="progress-track" id="inv-progress-track" onclick="seekInvitation(event)" role="slider" tabindex="0">
+<div class="progress-fill" id="inv-progress-fill"></div>
+</div>
+<span class="time-readout" id="inv-time-readout">00:00 / 00:45</span>
+</div>
+<div>
+<label class="ctrl-btn" for="upload-pregallery-video">Cargar video (.mp4)</label>
+<input accept="video/*" class="sr-only-input" id="upload-pregallery-video" onchange="handleLocalVideo(this)" type="file"/>
+</div>
+</div>
+</div>
+</div>
+<div aria-hidden="true" class="ornament-divider">
+<svg fill="none" height="20" viewbox="0 0 36 42" width="16">
+<path class="svg-gold" d="M18 3C18 3 6 17.5 6 25.8C6 32.5 11.4 38 18 38C24.6 38 30 32.5 30 25.8C30 17.5 18 3 18 3Z"></path>
+</svg>
+</div>
+<!-- TEXTO CURATORIAL ORIGINAL EXACTO -->
+<article aria-label="Texto Curatorial" class="curatorial-section">
+<h2 class="curatorial-question">¿En qué momento una fragancia deja de ser un simple aroma para convertirse en la pieza clave con la que nos presentamos ante el mundo?</h2>
+<div class="curatorial-body">
+<p>A lo largo del tiempo, la vestimenta y los aromas han sido las herramientas con las que materializamos nuestras creencias, nuestra actitud y la visión que tenemos del entorno. La imagen personal deja de ser un asunto superficial para transformarse en una decisión estratégica: un juego donde la única victoria real es mantenerse fiel a la propia identidad, y donde el perfume es la jugada que asegura el movimiento.</p>
+<p>En un escenario saturado de categorías y etiquetas rígidas, esta serie fotográfica expone que dos universos que solemos ver como opuestos, las reglas establecidas y el juego estratégico de construir nuestra propia identidad, no solo pueden convivir, sino potenciarse. A través de composiciones de alto contraste y un intencionado juego visual, el aroma se presenta como un acto de autonomía para adueñarnos de nuestra presencia sin pedir permiso.</p>
+<p class="curatorial-closing-emphasis">Aura y Estilo propone entender la perfumería como el toque final de la personalidad: una herramienta estética donde el estatus no se impone, se elige.</p>
+</div>
+</article>
+<div class="page-pagination">
+<span></span>
+<button class="ctrl-btn is-primary" onclick="navigateTo('detras')" type="button">Ir a Detrás de cámara →</button>
+</div>
+</section>
+<!-- ==================== PÁGINA 2: DETRÁS DE CÁMARA ==================== -->
+<section aria-labelledby="detras-title" class="page-view" id="page-detras">
+<div class="page-header-block">
+<p class="kicker">Proceso Metodológico &amp; Curaduría</p>
+<h1 class="display-title" id="detras-title">Detrás de cámara: investigación empírica y dirección de arte</h1>
+</div>
+<!-- 2.1 Investigación -->
+<div class="editorial-block">
+<h2 class="section-subhead">Investigación</h2>
+<p class="block-intro">Antes del primer disparo en estudio, una investigación mixta —encuesta cuantitativa (n=50) y entrevistas cualitativas (n=25)— permitió descubrir qué detiene la mirada en redes sociales, qué frena la compra digital de perfumería y qué recursos visuales convierten una publicación en confianza real.</p>
+<div aria-label="Resultados de investigación" class="tab-bar" role="tablist">
+<button aria-selected="true" class="tab-btn" id="tab-res-1" onclick="switchTabGroup('research', 'res-1', this)" role="tab" type="button">Insight del consumidor</button>
+<button aria-selected="false" class="tab-btn" id="tab-res-2" onclick="switchTabGroup('research', 'res-2', this)" role="tab" type="button">Atracción visual</button>
+<button aria-selected="false" class="tab-btn" id="tab-res-3" onclick="switchTabGroup('research', 'res-3', this)" role="tab" type="button">Barrera de compra</button>
+<button aria-selected="false" class="tab-btn" id="tab-res-4" onclick="switchTabGroup('research', 'res-4', this)" role="tab" type="button">Formato y acción</button>
+</div>
+<div aria-labelledby="tab-res-1" class="tab-panel is-active" id="panel-res-1" role="tabpanel">
+<blockquote class="quote-callout">“En la venta digital de perfumería, el consumidor no solo busca una fragancia, sino reducir el riesgo de equivocarse, buscando tener una cercanía hacia las fragancias antes que confiar ciegamente. El empaque y experiencias atraen, pero la descripción precisa y las garantías de calidad deciden.”</blockquote>
+<p>El contraste entre uso cotidiano y frecuencia de compra define la estrategia: el perfume forma parte del ritual diario de la audiencia, pero su reposición directa ocurre de manera ocasional o como obsequio. Esto exige construir cercanía, honestidad y prueba tangible antes de pedir una compra.</p>
+<div class="metrics-grid">
+<div class="metric-card">
+<div class="metric-label">Uso frecuente o diario</div>
+<div class="metric-value">66%</div>
+<p class="metric-desc">De los encuestados incorpora la fragancia en su rutina habitual.</p>
+</div>
+<div class="metric-card">
+<div class="metric-label">Compra ocasional</div>
+<div class="metric-value">48%</div>
+<p class="metric-desc">Adquiere perfumes de forma puntual, complementado por un 42% esporádico.</p>
+</div>
+<div class="metric-card">
+<div class="metric-label">Composición de muestra</div>
+<div class="metric-value">58% / 36%</div>
+<p class="metric-desc">Femenino (58%), masculino (36%) y 6% prefiere no indicarlo; 44% mayores de 45 años y 34% de 18 a 24 años.</p>
+</div>
+</div>
+</div>
+<div aria-labelledby="tab-res-2" class="tab-panel" id="panel-res-2" role="tabpanel">
+<p>En el entorno digital, la audiencia decide en segundos si se detiene ante una publicación. Las entrevistas cualitativas revelaron que la elegancia se asocia con tonos sobrios —negro, dorado, vino tinto y gamas frías—, iluminación equilibrada, orden visual y transparencia sobre fijación y duración.</p>
+<div aria-label="Factores críticos de atracción visual" class="bar-chart">
+<div class="bar-row">
+<span class="bar-name">Alto atractivo visual indispensable (5/5)</span>
+<div class="bar-track"><div class="bar-fill" style="width: 52%;"></div></div>
+<span class="bar-pct">52%</span>
+</div>
+<div class="bar-row">
+<span class="bar-name">Demostración real del producto en uso</span>
+<div class="bar-track"><div class="bar-fill" style="width: 50%;"></div></div>
+<span class="bar-pct">50%</span>
+</div>
+<div class="bar-row">
+<span class="bar-name">Estética del empaque y diseño del frasco</span>
+<div class="bar-track"><div class="bar-fill is-blue" style="width: 44%;"></div></div>
+<span class="bar-pct">44%</span>
+</div>
+<div class="bar-row">
+<span class="bar-name">Testimonios reales de otros clientes</span>
+<div class="bar-track"><div class="bar-fill is-blue" style="width: 44%;"></div></div>
+<span class="bar-pct">44%</span>
+</div>
+<div class="bar-row">
+<span class="bar-name">Videos con reseñas según la ocasión</span>
+<div class="bar-track"><div class="bar-fill is-blue" style="width: 36%;"></div></div>
+<span class="bar-pct">36%</span>
+</div>
+</div>
+</div>
+<div aria-labelledby="tab-res-3" class="tab-panel" id="panel-res-3" role="tabpanel">
+<p>El mayor freno de conversión es el miedo a comprar un aroma a ciegas. Además, el público abandona las cuentas por publicidad engañosa, saturación de ofertas agresivas o contenido robótico sin personalidad propia. Por ello, Aura y Estilo impulsa los <strong>decants</strong> como puerta de entrada accesible.</p>
+<div aria-label="Disposición ante la compra sin probar el aroma" class="bar-chart">
+<div class="bar-row">
+<span class="bar-name">No compra sin haberlo olido previamente</span>
+<div class="bar-track"><div class="bar-fill" style="width: 46%;"></div></div>
+<span class="bar-pct">46%</span>
+</div>
+<div class="bar-row">
+<span class="bar-name">Solo compraría con muestras previas o garantía</span>
+<div class="bar-track"><div class="bar-fill is-blue" style="width: 32%;"></div></div>
+<span class="bar-pct">32%</span>
+</div>
+<div class="bar-row">
+<span class="bar-name">Relación calidad-precio como factor decisivo</span>
+<div class="bar-track"><div class="bar-fill" style="width: 36%;"></div></div>
+<span class="bar-pct">36%</span>
+</div>
+<div class="bar-row">
+<span class="bar-name">Descripción detallada (duración y familia olfativa)</span>
+<div class="bar-track"><div class="bar-fill is-blue" style="width: 30%;"></div></div>
+<span class="bar-pct">30%</span>
+</div>
+<div class="bar-row">
+<span class="bar-name">Compraría a ciegas solo con reseñas</span>
+<div class="bar-track"><div class="bar-fill is-blue" style="width: 22%;"></div></div>
+<span class="bar-pct">22%</span>
+</div>
+</div>
+</div>
+<div aria-labelledby="tab-res-4" class="tab-panel" id="panel-res-4" role="tabpanel">
+<p>Los videos breves lideran el consumo de perfumería en redes. Para activar comentarios y guardados, el contenido debe reemplazar los anuncios estáticos por aplicaciones reales, notas olfativas claras y precios visibles sin fricción.</p>
+<div class="metrics-grid">
+<div class="metric-card">
+<div class="metric-label">Videos cortos (Reels / TikTok / Shorts)</div>
+<div class="metric-value">58%</div>
+<p class="metric-desc">Formato preferido frente a fotografía de producto (20%) e Historias (14%).</p>
+</div>
+<div class="metric-card">
+<div class="metric-label">Comentarios por precio o disponibilidad</div>
+<div class="metric-value">48%</div>
+<p class="metric-desc">Motivo principal de interacción escrita; un 40% rara vez comenta.</p>
+</div>
+<div class="metric-card">
+<div class="metric-label">Guardar para compra futura</div>
+<div class="metric-value">40%</div>
+<p class="metric-desc">Guarda fragancias de interés y un 28% conserva catálogos de precios.</p>
+</div>
+</div>
+</div>
+</div>
+<hr class="hairline-rule"/>
+<!-- 2.2 Marco simbólico y audiovisual (lenguaje accesible, sin jerga pesada ni menciones de agua ni materiales) -->
+<div class="editorial-block">
+<h2 class="section-title">Marco simbólico y audiovisual</h2>
+<p class="block-intro">Cada decisión visual responde a una lectura cultural clara: acercar el mundo de las fragancias a la expresión urbana cotidiana, sin códigos excluyentes ni etiquetas rígidas.</p>
+<div aria-label="Marco simbólico y audiovisual" class="tab-bar" role="tablist">
+<button aria-selected="true" class="tab-btn" id="tab-sym-1" onclick="switchTabGroup('symbolic', 'sym-1', this)" role="tab" type="button">El símbolo de la gota</button>
+<button aria-selected="false" class="tab-btn" id="tab-sym-2" onclick="switchTabGroup('symbolic', 'sym-2', this)" role="tab" type="button">Paleta y atmósfera</button>
+<button aria-selected="false" class="tab-btn" id="tab-sym-3" onclick="switchTabGroup('symbolic', 'sym-3', this)" role="tab" type="button">Dualidad y juego</button>
+<button aria-selected="false" class="tab-btn" id="tab-sym-4" onclick="switchTabGroup('symbolic', 'sym-4', this)" role="tab" type="button">Ritmo audiovisual</button>
+</div>
+<div aria-labelledby="tab-sym-1" class="tab-panel is-active" id="panel-sym-1" role="tabpanel">
+<h3 class="section-subhead">La huella invisible del aura</h3>
+<p>La identidad gráfica de Aura y Estilo se concentra en la gota: un símbolo asociado a la esencia concentrada, la memoria sensorial y la estela que permanece incluso cuando la persona ya salió de la habitación. Mientras la marca madre Cármika se vincula con el sol y la fuerza gráfica de la calle, la gota encarna esa presencia sutil que completa el estilo personal sin imponerse.</p>
+</div>
+<div aria-labelledby="tab-sym-2" class="tab-panel" id="panel-sym-2" role="tabpanel">
+<h3 class="section-subhead">Sofisticación nocturna y energía contemporánea</h3>
+<p>La paleta cromática articula el negro profundo y el gris grafito —asociados con elegancia, sobriedad y orden— junto con el dorado acento que aporta calidez y distinción, y el azul profundo como señal de frescura y modernidad. Los colores, accesorios y fragancias se presentan con libertad, evitando encasillar un aroma o un tono en un único género.</p>
+</div>
+<div aria-labelledby="tab-sym-3" class="tab-panel" id="panel-sym-3" role="tabpanel">
+<h3 class="section-subhead">La identidad como jugada consciente</h3>
+<p>A través de juegos visuales como el ajedrez, el dominó y el reflejo frente al espejo, la serie propone que elegir cómo oler es una decisión estratégica sobre quién queremos ser hoy. El perfume deja de presentarse como un privilegio inalcanzable y se convierte en una herramienta cotidiana de autenticidad, equilibrio y autonomía personal.</p>
+</div>
+<div aria-labelledby="tab-sym-4" class="tab-panel" id="panel-sym-4" role="tabpanel">
+<h3 class="section-subhead">Movimientos contenidos y contraste limpio</h3>
+<p>En la narrativa en movimiento, cada gesto se dirige con precisión: el instante al aplicar la fragancia, la caída natural de una prenda holgada y la pausa de la mirada antes de salir. El ritmo visual combina planos serenos con acentos sonoros intensos, logrando que la elegancia clásica y el pulso urbano dialoguen en una misma escena.</p>
+</div>
+</div>
+<hr class="hairline-rule"/>
+<!-- 2.3 NUEVA SUBSECCIÓN (exactamente entre Marco simbólico/audiovisual y Escaleta de producción) -->
+<div aria-labelledby="referencias-heading" class="editorial-block">
+<h2 class="section-title" id="referencias-heading">Referencias conceptuales de fotografía</h2>
+<p class="block-intro">Cuatro referentes visuales, narrativos, sonoros y coreográficos extraídos del universo creativo de Aura y Estilo orientan la puesta en escena de toda la serie.</p>
+<div class="references-grid">
+<article class="ref-card">
+<span class="ref-tag">Referente Editorial &amp; Luz</span>
+<h3 class="ref-title">Tom Ford Beauty &amp; Byredo</h3>
+<p class="ref-desc">Lujo, sensualidad, minimalismo y contrastes de luz fuertes y bien definidos.</p>
+</article>
+<article class="ref-card">
+<span class="ref-tag">Referente Narrativo</span>
+<h3 class="ref-title">Gambito de Dama (The Queen's Gambit)</h3>
+<p class="ref-desc">La metáfora del ajedrez como tablero de estrategia, inteligencia y construcción de estatus personal.</p>
+</article>
+<article class="ref-card">
+<span class="ref-tag">Referente Sonoro</span>
+<h3 class="ref-title">Woodkid ("Guns for Hire") &amp; Lorn ("Acid Rain")</h3>
+<p class="ref-desc">Dimensión sonora del universo visual; fusión de orquestación sinfónica con ritmos electrónicos pesados y la profundidad del bajo electrónico.</p>
+</article>
+<article class="ref-card">
+<span class="ref-tag">Referente de Movimiento</span>
+<h3 class="ref-title">Jacob Jonas The Company (Danza Contemporánea Urbana)</h3>
+<p class="ref-desc">Dirección de movimiento, soltura del movimiento urbano y captura en suspensión de la bruma del perfume al atomizar.</p>
+</article>
+</div>
+</div>
+<hr class="hairline-rule"/>
+<!-- 2.4 Escaleta de producción (5 obras en tabs, descripciones limpias) -->
+<div class="editorial-block">
+<h2 class="section-title">Escaleta de producción</h2>
+<p class="block-intro">Planificación visual de las cinco obras que integran la exposición, articulando bodegones de producto, demostración de uso y retratos de dualidad e identidad.</p>
+<div aria-label="Escaleta de las cinco obras" class="tab-bar" role="tablist">
+<button aria-selected="true" class="tab-btn" id="tab-esc-1" onclick="switchTabGroup('escaleta', 'esc-1', this)" role="tab" type="button">1. Encaje (Dominó)</button>
+<button aria-selected="false" class="tab-btn" id="tab-esc-2" onclick="switchTabGroup('escaleta', 'esc-2', this)" role="tab" type="button">2. Parte del conjunto (Bandeja)</button>
+<button aria-selected="false" class="tab-btn" id="tab-esc-3" onclick="switchTabGroup('escaleta', 'esc-3', this)" role="tab" type="button">3. Reflejos (Espejo)</button>
+<button aria-selected="false" class="tab-btn" id="tab-esc-4" onclick="switchTabGroup('escaleta', 'esc-4', this)" role="tab" type="button">4. Diferencias (Conexión)</button>
+<button aria-selected="false" class="tab-btn" id="tab-esc-5" onclick="switchTabGroup('escaleta', 'esc-5', this)" role="tab" type="button">5. Teje un destino</button>
+</div>
+<div aria-labelledby="tab-esc-1" class="tab-panel is-active" id="panel-esc-1" role="tabpanel">
+<div class="escaleta-layout">
+<div>
+<h3 class="section-subhead">Encaje (Dominó)</h3>
+<p>Los decants sustituyen piezas dentro de una partida de dominó para representar cómo distintas esencias pueden coexistir y encajar en una misma identidad. La escena propone equilibrio entre fuerza y delicadeza, entre la tradición de la perfumería y la frescura contemporánea.</p>
+</div>
+<ul class="escaleta-meta">
+<li><span class="meta-k">Protagonista</span><span class="meta-v">Decants seleccionados (10 ml)</span></li>
+<li><span class="meta-k">Eje simbólico</span><span class="meta-v">Coexistencia de facetas personales</span></li>
+<li><span class="meta-k">Iluminación</span><span class="meta-v">Luz lateral direccional de alto contraste</span></li>
+<li><span class="meta-k">Encuadre</span><span class="meta-v">Plano detalle cenital / 45 grados</span></li>
+</ul>
+</div>
+</div>
+<div aria-labelledby="tab-esc-2" class="tab-panel" id="panel-esc-2" role="tabpanel">
+<div class="escaleta-layout">
+<div>
+<h3 class="section-subhead">Parte del conjunto (Bandeja)</h3>
+<p>El frasco se presenta sobre una bandeja acompañado por accesorios y objetos personales cotidianos. La composición comunica que el estilo se construye en la relación armónica entre lo que vestimos, lo que portamos y el aroma que elegimos como cierre.</p>
+</div>
+<ul class="escaleta-meta">
+<li><span class="meta-k">Protagonista</span><span class="meta-v">Frasco principal y accesorios</span></li>
+<li><span class="meta-k">Eje simbólico</span><span class="meta-v">Ritual diario e integración del estilo</span></li>
+<li><span class="meta-k">Iluminación</span><span class="meta-v">Reflejos limpios y sombras suaves</span></li>
+<li><span class="meta-k">Encuadre</span><span class="meta-v">Bodegón abierto en plano medio</span></li>
+</ul>
+</div>
+</div>
+<div aria-labelledby="tab-esc-3" class="tab-panel" id="panel-esc-3" role="tabpanel">
+<div class="escaleta-layout">
+<div>
+<h3 class="section-subhead">Reflejos (Espejo)</h3>
+<p>El encuentro entre el espejo, el perfume y la persona plantea una pausa reflexiva sobre la imagen propia y lo que se desea proyectar al mundo. La fragancia funciona como una extensión de la identidad que trasciende lo visible.</p>
+</div>
+<ul class="escaleta-meta">
+<li><span class="meta-k">Protagonista</span><span class="meta-v">Perfume en diálogo con espejo</span></li>
+<li><span class="meta-k">Eje simbólico</span><span class="meta-v">Autoconocimiento y presencia</span></li>
+<li><span class="meta-k">Iluminación</span><span class="meta-v">Contraluz suave con brillo especular</span></li>
+<li><span class="meta-k">Encuadre</span><span class="meta-v">Doble lectura en primer y segundo plano</span></li>
+</ul>
+</div>
+</div>
+<div aria-labelledby="tab-esc-4" class="tab-panel" id="panel-esc-4" role="tabpanel">
+<div class="escaleta-layout">
+<div>
+<h3 class="section-subhead">Diferencias (Conexión)</h3>
+<p>Dos jóvenes de estilos opuestos comparten el mismo espacio: una figura con vestido rojo y postura autoritaria junto a otra con ropa callejera y silueta oversize en actitud relajada. La escena encarna la dualidad de la marca y demuestra que dos expresiones distintas pueden convivir con autenticidad sin aislarse.</p>
+</div>
+<ul class="escaleta-meta">
+<li><span class="meta-k">Protagonistas</span><span class="meta-v">Dos modelos en contraste estilístico</span></li>
+<li><span class="meta-k">Eje simbólico</span><span class="meta-v">Dualidad elegancia y cultura urbana</span></li>
+<li><span class="meta-k">Iluminación</span><span class="meta-v">Clave baja dramática con acento cálido</span></li>
+<li><span class="meta-k">Encuadre</span><span class="meta-v">Plano entero / tres cuartos equilibrado</span></li>
+</ul>
+</div>
+</div>
+<div aria-labelledby="tab-esc-5" class="tab-panel" id="panel-esc-5" role="tabpanel">
+<div class="escaleta-layout">
+<div>
+<h3 class="section-subhead">Teje un destino</h3>
+<p>Montaje fotográfico en el que los creadores de la marca se sitúan en el centro mientras distintos hilos los enlazan con todo lo que han construido. Simboliza el propósito de Aura y Estilo: que el perfume sea el último vínculo necesario para conectar cada parte de la identidad personal.</p>
+</div>
+<ul class="escaleta-meta">
+<li><span class="meta-k">Protagonistas</span><span class="meta-v">Creadores de Aura y Estilo by Cármika</span></li>
+<li><span class="meta-k">Eje simbólico</span><span class="meta-v">Vínculo entre origen, moda y aroma</span></li>
+<li><span class="meta-k">Iluminación</span><span class="meta-v">Iluminación central envolvente</span></li>
+<li><span class="meta-k">Encuadre</span><span class="meta-v">Composición coral en eje simétrico</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="page-pagination">
+<button class="ctrl-btn" onclick="navigateTo('portada')" type="button">← Volver a Portada</button>
+<button class="ctrl-btn is-primary" onclick="navigateTo('galeria')" type="button">Explorar Hora de la Galería →</button>
+</div>
+</section>
+<!-- ==================== PÁGINA 3: HORA DE LA GALERÍA ==================== -->
+<section aria-labelledby="galeria-title" class="page-view" id="page-galeria">
+<div class="page-header-block">
+<p class="kicker">Exposición Fotográfica Oficial</p>
+<h1 class="display-title" id="galeria-title">Hora de la Galería</h1>
+<h2 class="section-subhead" style="text-align: center;">Explora nuestra Galería</h2>
+</div>
+<div aria-label="Filtrar obras de la galería" class="gallery-filters" role="group">
+<button aria-pressed="true" class="filter-pill" onclick="filterGallery('all', this)" type="button">Todas las obras (5)</button>
+<button aria-pressed="false" class="filter-pill" onclick="filterGallery('objeto', this)" type="button">Objeto &amp; Esencia (3)</button>
+<button aria-pressed="false" class="filter-pill" onclick="filterGallery('dualidad', this)" type="button">Dualidad &amp; Vínculo (2)</button>
+</div>
+<div class="gallery-grid" id="gallery-grid">
+<!-- Obra 1: Encaje -->
+<article class="artwork-card" data-series="objeto">
+<div class="artwork-frame">
+<img alt="Obra Encaje" class="artwork-svg" src="images/encaje.svg"/>
+<img alt="Fotografía final Encaje" class="artwork-uploaded-img has-file" id="img-work-0" src="images/encaje.png"/>
+<span class="artwork-badge">Obra 01 · A3</span>
+</div>
+<div class="artwork-body">
+<h3 class="artwork-title">Encaje</h3>
+<p class="artwork-desc">Los decants sustituyen piezas del dominó para mostrar cómo distintas esencias coexisten en equilibrio dentro de una misma identidad.</p>
+<ul class="ficha-list">
+<li><span class="f-key">Archivo</span><span class="f-val">Encaje.jpeg</span></li>
+<li><span class="f-key">Formato</span><span class="f-val">A3 / 297 x 420 mm</span></li>
+<li><span class="f-key">Serie</span><span class="f-val">Objeto &amp; Esencia</span></li>
+</ul>
+<div class="artwork-actions">
+<button class="ctrl-btn is-primary" onclick="openLightbox(0)" type="button">Ver ficha y obra</button>
+<label class="ctrl-btn" for="file-work-0">Cargar Encaje.jpeg</label>
+<input accept="image/*" class="sr-only-input" id="file-work-0" onchange="loadArtworkImage(0, this)" type="file"/>
+</div>
+</div>
+</article>
+<!-- Obra 2: Parte del conjunto -->
+<article class="artwork-card" data-series="objeto">
+<div class="artwork-frame">
+<img alt="Obra Parte del conjunto" class="artwork-svg" src="images/parte-del-conjunto.svg"/>
+<img alt="Fotografía final Parte del conjunto" class="artwork-uploaded-img has-file" id="img-work-1" src="images/parte-del-conjunto.png"/>
+<span class="artwork-badge">Obra 02 · A2</span>
+</div>
+<div class="artwork-body">
+<h3 class="artwork-title">Parte del conjunto</h3>
+<p class="artwork-desc">El perfume sobre una bandeja junto a accesorios y objetos personales: el estilo se construye en diálogo con todo lo que portamos.</p>
+<ul class="ficha-list">
+<li><span class="f-key">Archivo</span><span class="f-val">Parte del conjunto.jpeg</span></li>
+<li><span class="f-key">Formato</span><span class="f-val">A2 / 594 x 420 mm</span></li>
+<li><span class="f-key">Serie</span><span class="f-val">Objeto &amp; Esencia</span></li>
+</ul>
+<div class="artwork-actions">
+<button class="ctrl-btn is-primary" onclick="openLightbox(1)" type="button">Ver ficha y obra</button>
+<label class="ctrl-btn" for="file-work-1">Cargar Parte del conjunto.jpeg</label>
+<input accept="image/*" class="sr-only-input" id="file-work-1" onchange="loadArtworkImage(1, this)" type="file"/>
+</div>
+</div>
+</article>
+<!-- Obra 3: Reflejos -->
+<article class="artwork-card" data-series="objeto">
+<div class="artwork-frame">
+<img alt="Obra Reflejos" class="artwork-svg" src="images/reflejos.svg"/>
+<img alt="Fotografía final Reflejos" class="artwork-uploaded-img has-file" id="img-work-2" src="images/reflejos.png"/>
+<span class="artwork-badge">Obra 03 · A3</span>
+</div>
+<div class="artwork-body">
+<h3 class="artwork-title">Reflejos</h3>
+<p class="artwork-desc">Diálogo entre el espejo, el perfume y la presencia personal: una reflexión íntima sobre aquello que proyectamos más allá de la vista.</p>
+<ul class="ficha-list">
+<li><span class="f-key">Archivo</span><span class="f-val">Reflejos.jpeg</span></li>
+<li><span class="f-key">Formato</span><span class="f-val">A3 / 297 x 420 mm</span></li>
+<li><span class="f-key">Serie</span><span class="f-val">Objeto &amp; Esencia</span></li>
+</ul>
+<div class="artwork-actions">
+<button class="ctrl-btn is-primary" onclick="openLightbox(2)" type="button">Ver ficha y obra</button>
+<label class="ctrl-btn" for="file-work-2">Cargar Reflejos.jpeg</label>
+<input accept="image/*" class="sr-only-input" id="file-work-2" onchange="loadArtworkImage(2, this)" type="file"/>
+</div>
+</div>
+</article>
+<!-- Obra 4: Diferencias -->
+<article class="artwork-card" data-series="dualidad">
+<div class="artwork-frame">
+<img alt="Obra Diferencias" class="artwork-svg" src="images/diferencias.svg"/>
+<img alt="Fotografía final Diferencias" class="artwork-uploaded-img has-file" id="img-work-3" src="images/diferencias.png"/>
+<span class="artwork-badge">Obra 04 · A3</span>
+</div>
+<div class="artwork-body">
+<h3 class="artwork-title">Diferencias</h3>
+<p class="artwork-desc">Se muestra a dos jóvenes opuestos, una con un vestido rojo y pose autoritaria, el otro con ropa callejera y oversize en pose relajada, mostrando la dualidad de la marca y la identidad propia.</p>
+<ul class="ficha-list">
+<li><span class="f-key">Archivo</span><span class="f-val">Diferencias.jpeg</span></li>
+<li><span class="f-key">Origen</span><span class="f-val">DIFERENCIAS_TEJEUNDESTINO.pdf</span></li>
+<li><span class="f-key">Formato</span><span class="f-val">A3 / 297 x 420 mm</span></li>
+</ul>
+<div class="artwork-actions">
+<button class="ctrl-btn is-primary" onclick="openLightbox(3)" type="button">Ver ficha y obra</button>
+<label class="ctrl-btn" for="file-work-3">Cargar Diferencias.jpeg</label>
+<input accept="image/*" class="sr-only-input" id="file-work-3" onchange="loadArtworkImage(3, this)" type="file"/>
+</div>
+</div>
+</article>
+<!-- Obra 5: Teje un destino -->
+<article class="artwork-card" data-series="dualidad">
+<div class="artwork-frame">
+<img alt="Obra Teje un destino" class="artwork-svg" src="images/teje-un-destino.svg"/>
+<img alt="Fotografía final Teje un destino" class="artwork-uploaded-img has-file" id="img-work-4" src="images/teje-un-destino.png"/>
+<span class="artwork-badge">Obra 05 · A3</span>
+</div>
+<div class="artwork-body">
+<h3 class="artwork-title">Teje un destino</h3>
+<p class="artwork-desc">Montaje de fotografías en donde los creadores de la marca se encuentran en el medio y los hilos los conectan con lo que han creado, una marca que busca que el perfume sea la última parte para conectar tu identidad.</p>
+<ul class="ficha-list">
+<li><span class="f-key">Archivo</span><span class="f-val">Teje un destino.jpeg</span></li>
+<li><span class="f-key">Origen</span><span class="f-val">DIFERENCIAS_TEJEUNDESTINO.pdf</span></li>
+<li><span class="f-key">Formato</span><span class="f-val">A3 / 297 x 420 mm</span></li>
+</ul>
+<div class="artwork-actions">
+<button class="ctrl-btn is-primary" onclick="openLightbox(4)" type="button">Ver ficha y obra</button>
+<label class="ctrl-btn" for="file-work-4">Cargar Teje un destino.jpeg</label>
+<input accept="image/*" class="sr-only-input" id="file-work-4" onchange="loadArtworkImage(4, this)" type="file"/>
+</div>
+</div>
+</article>
+</div>
+<div class="page-pagination">
+<button class="ctrl-btn" onclick="navigateTo('detras')" type="button">← Detrás de cámara</button>
+<button class="ctrl-btn is-primary" onclick="navigateTo('identidad')" type="button">Ir a Identidad de Marca →</button>
+</div>
+</section>
+<!-- ==================== PÁGINA 4: IDENTIDAD DE MARCA ==================== -->
+<section aria-labelledby="identidad-title" class="page-view" id="page-identidad">
+<div class="page-header-block">
+<p class="kicker">Dos Universos · Una Identidad</p>
+<h1 class="display-title" id="identidad-title">Identidad de Marca</h1>
+</div>
+<div class="identity-split">
+<article class="identity-panel">
+<h2 class="section-subhead">Origen: de Cármika a Aura y Estilo</h2>
+<p><strong>Aura y Estilo by Cármika</strong> nace directamente de su marca madre <strong>Cármika</strong>, reconocida por su propuesta de moda urbana en camisetas oversize y gorras que transforman lo cotidiano en expresión auténtica.</p>
+<p>A partir de ese origen callejero, Aura y Estilo surge como una línea especializada en <strong>perfumería de alta calidad y decants</strong>, integrando dos dimensiones complementarias de la identidad personal: la fuerza visual de la indumentaria urbana y el poder invisible de la fragancia.</p>
+<p>El perfume se posiciona así como el toque final e indispensable del estilo, elevando el vestuario urbano hacia una dimensión de sofisticación, orden y carácter propio.</p>
+</article>
+<article class="identity-panel">
+<h2 class="section-subhead">Símbolo, Tipografía y Propósito</h2>
+<p>Mientras Cármika conserva el símbolo del sol, Aura y Estilo adopta la <strong>gota</strong> como emblema de la esencia, la estela sensorial y aquello que se percibe más allá de la apariencia.</p>
+<p>La voz tipográfica combina <strong>Avigea Italic</strong> en títulos y cabeceras con una fuente secundaria limpia de alta legibilidad para fichas, catálogos y narrativa editorial, asegurando coherencia en cada punto de contacto digital.</p>
+<div style="display: flex; align-items: center; gap: var(--space-md); margin-top: var(--space-lg); padding-top: var(--space-md); border-top: var(--hairline-soft);">
+<svg aria-hidden="true" fill="none" height="38" viewbox="0 0 36 42" width="32">
+<path class="svg-gold" d="M18 3C18 3 6 17.5 6 25.8C6 32.5 11.4 38 18 38C24.6 38 30 32.5 30 25.8C30 17.5 18 3 18 3Z"></path>
+</svg>
+<div>
+<div style="font-family: var(--font-headline); font-style: italic; font-size: 1.25rem;">El perfume como jugada final</div>
+<div style="font-size: 0.85rem; color: var(--secondary);">Lociones seleccionadas · Réplicas premium · Formato Decant</div>
+</div>
+</div>
+</article>
+</div>
+<!-- Paleta cromática oficial interactiva -->
+<div class="editorial-block">
+<h2 class="section-title">Paleta cromática oficial</h2>
+<p class="block-intro">Haz clic en cualquier tono para copiar su código hexadecimal oficial del manual de marca.</p>
+<div class="swatches-grid">
+<button class="swatch-card" onclick="copyTextValue('#100A08', 'palette-status')" type="button">
+<div class="swatch-color swatch-noir"></div>
+<div class="swatch-meta">
+<span class="swatch-hex">#100A08</span>
+<span class="swatch-name">Negro Profundo</span>
+</div>
+</button>
+<button class="swatch-card" onclick="copyTextValue('#3B3635', 'palette-status')" type="button">
+<div class="swatch-color swatch-graphite"></div>
+<div class="swatch-meta">
+<span class="swatch-hex">#3B3635</span>
+<span class="swatch-name">Gris Grafito</span>
+</div>
+</button>
+<button class="swatch-card" onclick="copyTextValue('#F0D030', 'palette-status')" type="button">
+<div class="swatch-color swatch-gold"></div>
+<div class="swatch-meta">
+<span class="swatch-hex">#F0D030</span>
+<span class="swatch-name">Dorado Acento</span>
+</div>
+</button>
+<button class="swatch-card" onclick="copyTextValue('#0D5792', 'palette-status')" type="button">
+<div class="swatch-color swatch-blue"></div>
+<div class="swatch-meta">
+<span class="swatch-hex">#0D5792</span>
+<span class="swatch-name">Azul Profundo</span>
+</div>
+</button>
+</div>
+<p aria-live="polite" class="inline-status" id="palette-status"></p>
+</div>
+<hr class="hairline-rule"/>
+<!-- Espacios dedicados a Códigos QR de Catálogo y Redes Sociales (@aurayestilocol) -->
+<div class="editorial-block">
+<h2 class="section-title">Catálogo y Redes Oficiales</h2>
+<p class="block-intro">Espacios dedicados para el acceso directo al catálogo de fragancias y decants, así como a los canales oficiales de la marca.</p>
+<div class="qr-grid">
+<!-- QR 1: Catálogo -->
+<article class="qr-card">
+<span class="kicker" style="margin: 0;">Acceso Directo · Fragancias &amp; Decants</span>
+<h3 class="section-subhead" style="margin: 0;">Código QR del Catálogo</h3>
+<div class="qr-plate">
+<svg aria-label="Espacio dedicado para Código QR del Catálogo de Aura y Estilo" fill="none" height="174" viewbox="0 0 29 29" width="174">
+<!-- Patrones de posicionamiento QR -->
+<rect class="stroke-noir" height="7" stroke-width="1" width="7" x="1" y="1"></rect>
+<rect class="svg-noir" height="3" width="3" x="3" y="3"></rect>
+<rect class="stroke-noir" height="7" stroke-width="1" width="7" x="21" y="1"></rect>
+<rect class="svg-noir" height="3" width="3" x="23" y="3"></rect>
+<rect class="stroke-noir" height="7" stroke-width="1" width="7" x="1" y="21"></rect>
+<rect class="svg-noir" height="3" width="3" x="3" y="23"></rect>
+<!-- Módulos de matriz -->
+<rect class="svg-noir" height="2" width="2" x="10" y="2"></rect>
+<rect class="svg-noir" height="3" width="2" x="14" y="1"></rect>
+<rect class="svg-noir" height="2" width="2" x="17" y="3"></rect>
+<rect class="svg-noir" height="2" width="3" x="10" y="6"></rect>
+<rect class="svg-noir" height="2" width="4" x="15" y="6"></rect>
+<rect class="svg-noir" height="3" width="2" x="2" y="10"></rect>
+<rect class="svg-noir" height="2" width="2" x="6" y="10"></rect>
+<rect class="svg-noir" height="2" width="3" x="2" y="15"></rect>
+<rect class="svg-noir" height="3" width="2" x="6" y="16"></rect>
+<rect class="svg-noir" height="3" width="2" x="21" y="10"></rect>
+<rect class="svg-noir" height="2" width="3" x="25" y="11"></rect>
+<rect class="svg-noir" height="2" width="4" x="22" y="15"></rect>
+<rect class="svg-noir" height="3" width="2" x="10" y="21"></rect>
+<rect class="svg-noir" height="2" width="3" x="14" y="22"></rect>
+<rect class="svg-noir" height="4" width="2" x="18" y="21"></rect>
+<rect class="svg-noir" height="3" width="3" x="22" y="21"></rect>
+<rect class="svg-noir" height="4" width="2" x="26" y="23"></rect>
+<rect class="svg-noir" height="2" width="4" x="11" y="26"></rect>
+<!-- Emblema central -->
+<circle class="svg-ivory stroke-noir" cx="14.5" cy="14.5" r="3.4" stroke-width="0.6"></circle>
+<path class="svg-noir" d="M14.5 12C14.5 12 12.6 14.3 12.6 15.5C12.6 16.5 13.45 17.3 14.5 17.3C15.55 17.3 16.4 16.5 16.4 15.5C16.4 14.3 14.5 12 14.5 12Z"></path>
+</svg>
+<img alt="Código QR oficial del catálogo de Aura y Estilo" class="has-file" id="qr-img-catalog" src="images/qr-catalogo.png"/>
+</div>
+<p class="artwork-desc">Consulta disponibilidad, tabla de notas aromáticas, formatos de 10 ml (decants) y presentaciones originales.</p>
+<label class="ctrl-btn" for="file-qr-catalog">Cargar imagen QR Catálogo</label>
+<input accept="image/*" class="sr-only-input" id="file-qr-catalog" onchange="loadQrImage('qr-img-catalog', this)" type="file"/>
+</article>
+<!-- QR 2: Redes Sociales @aurayestilocol -->
+<article class="qr-card">
+<span class="kicker" style="margin: 0;">Comunidad Digital Oficial</span>
+<h3 class="section-subhead" style="margin: 0;">Redes Sociales Oficiales</h3>
+<div class="qr-plate">
+<svg aria-label="Espacio dedicado para Código QR de redes sociales @aurayestilocol" fill="none" height="174" viewbox="0 0 29 29" width="174">
+<rect class="stroke-noir" height="7" stroke-width="1" width="7" x="1" y="1"></rect>
+<rect class="svg-noir" height="3" width="3" x="3" y="3"></rect>
+<rect class="stroke-noir" height="7" stroke-width="1" width="7" x="21" y="1"></rect>
+<rect class="svg-noir" height="3" width="3" x="23" y="3"></rect>
+<rect class="stroke-noir" height="7" stroke-width="1" width="7" x="1" y="21"></rect>
+<rect class="svg-noir" height="3" width="3" x="3" y="23"></rect>
+<!-- Módulos diferenciados -->
+<rect class="svg-noir" height="2" width="3" x="10" y="1"></rect>
+<rect class="svg-noir" height="2" width="3" x="15" y="2"></rect>
+<rect class="svg-noir" height="3" width="2" x="11" y="5"></rect>
+<rect class="svg-noir" height="2" width="4" x="15" y="6"></rect>
+<rect class="svg-noir" height="2" width="3" x="1" y="10"></rect>
+<rect class="svg-noir" height="4" width="2" x="6" y="11"></rect>
+<rect class="svg-noir" height="3" width="3" x="2" y="16"></rect>
+<rect class="svg-noir" height="2" width="3" x="21" y="11"></rect>
+<rect class="svg-noir" height="4" width="2" x="26" y="10"></rect>
+<rect class="svg-noir" height="2" width="5" x="22" y="16"></rect>
+<rect class="svg-noir" height="2" width="3" x="10" y="20"></rect>
+<rect class="svg-noir" height="3" width="2" x="15" y="21"></rect>
+<rect class="svg-noir" height="2" width="4" x="10" y="25"></rect>
+<rect class="svg-noir" height="2" width="3" x="20" y="21"></rect>
+<rect class="svg-noir" height="3" width="3" x="25" y="21"></rect>
+<rect class="svg-noir" height="2" width="5" x="21" y="25"></rect>
+<circle class="svg-ivory stroke-noir" cx="14.5" cy="14.5" r="3.4" stroke-width="0.6"></circle>
+<path class="svg-noir" d="M14.5 12C14.5 12 12.6 14.3 12.6 15.5C12.6 16.5 13.45 17.3 14.5 17.3C15.55 17.3 16.4 16.5 16.4 15.5C16.4 14.3 14.5 12 14.5 12Z"></path>
+</svg>
+<img alt="Código QR oficial de redes sociales @aurayestilocol" class="has-file" id="qr-img-social" src="images/qr-instagram.png"/>
+</div>
+<div class="social-handle-box">@aurayestilocol</div>
+<p class="artwork-desc">Reseñas en uso real, lanzamientos, guías olfativas según la ocasión y novedades junto a Cármika.</p>
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: var(--space-sm);">
+<button class="ctrl-btn is-primary" onclick="copyTextValue('@aurayestilocol', 'social-status')" type="button">Copiar @aurayestilocol</button>
+<label class="ctrl-btn" for="file-qr-social">Cargar QR Redes</label>
+<input accept="image/*" class="sr-only-input" id="file-qr-social" onchange="loadQrImage('qr-img-social', this)" type="file"/>
+</div>
+<p aria-live="polite" class="inline-status" id="social-status"></p>
+</article>
+</div>
+</div>
+<div class="page-pagination">
+<button class="ctrl-btn" onclick="navigateTo('galeria')" type="button">← Hora de la Galería</button>
+<button class="ctrl-btn is-primary" onclick="navigateTo('portada')" type="button">Volver al inicio →</button>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container">
+<p style="margin: 0;">Aura y Estilo by Cármika · Tuluá, Valle del Cauca · Exposición Digital y Dirección de Arte</p>
+</div>
+</footer>
+</div>
+<!-- Lightbox de Galería -->
+<div aria-labelledby="lb-title" aria-modal="true" class="lightbox-backdrop" id="gallery-lightbox" role="dialog">
+<div class="lightbox-dialog">
+<div class="lightbox-media" id="lb-media-host"></div>
+<div class="lightbox-info">
+<div class="lightbox-top">
+<span class="kicker" id="lb-badge" style="margin: 0; text-align: left;">Obra</span>
+<button class="ctrl-btn" id="lb-close-btn" onclick="closeLightbox()" type="button">Cerrar</button>
+</div>
+<h2 class="section-title" id="lb-title" style="margin-bottom: var(--space-xs);">Obra</h2>
+<p id="lb-desc" style="margin: 0; color: var(--on-surface-variant);"></p>
+<ul class="ficha-list" id="lb-ficha"></ul>
+<div style="display: flex; justify-content: space-between; gap: var(--space-sm); margin-top: auto; padding-top: var(--space-md);">
+<button class="ctrl-btn" onclick="stepLightbox(-1)" type="button">← Anterior</button>
+<button class="ctrl-btn is-primary" onclick="stepLightbox(1)" type="button">Siguiente →</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+    /* Datos de las 5 obras de la Galería (escapados con template literals) */
+    const GALLERY_WORKS = [
+      {
+        index: 0,
+        title: `Encaje`,
+        file: `Encaje.jpeg`,
+        origin: `Serie Estudio & Objeto`,
+        format: `A3 / 297 x 420 mm`,
+        place: `Tuluá, Valle del Cauca — Colombia`,
+        date: `Noviembre 2026`,
+        desc: `Los decants sustituyen piezas del dominó para representar cómo diferentes esencias pueden coexistir en una misma identidad, proponiendo un equilibrio entre fuerza y delicadeza, tradición y modernidad.`
+      },
+      {
+        index: 1,
+        title: `Parte del conjunto`,
+        file: `Parte del conjunto.jpeg`,
+        origin: `Serie Estudio & Objeto`,
+        format: `A2 / 594 x 420 mm`,
+        place: `Tuluá, Valle del Cauca — Colombia`,
+        date: `Noviembre 2026`,
+        desc: `El perfume se presenta en una bandeja junto con accesorios y objetos personales, comunicando que el estilo se construye mediante la relación entre lo que una persona viste, utiliza y considera propio.`
+      },
+      {
+        index: 2,
+        title: `Reflejos`,
+        file: `Reflejos.jpeg`,
+        origin: `Serie Estudio & Objeto`,
+        format: `A3 / 297 x 420 mm`,
+        place: `Tuluá, Valle del Cauca — Colombia`,
+        date: `Noviembre 2026`,
+        desc: `La relación entre el espejo, el perfume y la persona plantea una reflexión sobre la imagen personal y aquello que se desea transmitir más allá de la apariencia visible.`
+      },
+      {
+        index: 3,
+        title: `Diferencias`,
+        file: `Diferencias.jpeg`,
+        origin: `DIFERENCIAS_TEJEUNDESTINO.pdf`,
+        format: `A3 / 297 x 420 mm`,
+        place: `Tuluá, Valle del Cauca — Colombia`,
+        date: `03/11/2026`,
+        desc: `Se muestra a dos jóvenes opuestos, una con un vestido rojo y pose autoritaria, el otro con ropa callejera y oversize en pose relajada, mostrando la dualidad de la marca y la identidad propia.`
+      },
+      {
+        index: 4,
+        title: `Teje un destino`,
+        file: `Teje un destino.jpeg`,
+        origin: `DIFERENCIAS_TEJEUNDESTINO.pdf`,
+        format: `A3 / 297 x 420 mm`,
+        place: `Tuluá, Valle del Cauca — Colombia`,
+        date: `05/11/2026`,
+        desc: `Montaje de fotografías en donde los creadores de la marca se encuentran en el medio y los hilos los conectan con lo que han creado, una marca que busca que el perfume sea la última parte para conectar tu identidad.`
+      }
+    ];
+
+    const PAGE_IDS = [`portada`, `detras`, `galeria`, `identidad`];
+    let currentLightboxIndex = 0;
+
+    /* Navegación multipágina */
+    function navigateTo(pageKey) {
+      if (!PAGE_IDS.includes(pageKey)) return;
+
+      PAGE_IDS.forEach(function (key) {
+        const section = document.getElementById(`page-` + key);
+        const navBtn = document.getElementById(`nav-` + key);
+        if (section) {
+          if (key === pageKey) {
+            section.classList.add(`is-active`);
+          } else {
+            section.classList.remove(`is-active`);
+          }
+        }
+        if (navBtn) {
+          if (key === pageKey) {
+            navBtn.setAttribute(`aria-current`, `page`);
+          } else {
+            navBtn.removeAttribute(`aria-current`);
+          }
+        }
+      });
+
+      if (pageKey !== `portada` && invState.playing) {
+        stopInvitationPlayback();
+      }
+
+      window.scrollTo({ top: 0, behavior: `smooth` });
+    }
+
+    /* Sistema genérico de Tabs */
+    function switchTabGroup(group, targetId, btnEl) {
+      if (!btnEl || !btnEl.parentElement) return;
+      const tabButtons = btnEl.parentElement.querySelectorAll(`.tab-btn`);
+      tabButtons.forEach(function (btn) {
+        btn.setAttribute(`aria-selected`, `false`);
+      });
+      btnEl.setAttribute(`aria-selected`, `true`);
+
+      const prefix = group === `research` ? `panel-res-` : (group === `symbolic` ? `panel-sym-` : `panel-esc-`);
+      const allPanels = document.querySelectorAll(`[id^="` + prefix + `"]`);
+      allPanels.forEach(function (panel) {
+        panel.classList.remove(`is-active`);
+      });
+
+      const activePanel = document.getElementById(`panel-` + targetId);
+      if (activePanel) {
+        activePanel.classList.add(`is-active`);
+      }
+    }
+
+    /* Filtros de Galería */
+    function filterGallery(seriesKey, btnEl) {
+      const filterButtons = document.querySelectorAll(`.filter-pill`);
+      filterButtons.forEach(function (btn) {
+        btn.setAttribute(`aria-pressed`, `false`);
+      });
+      if (btnEl) {
+        btnEl.setAttribute(`aria-pressed`, `true`);
+      }
+
+      const cards = document.querySelectorAll(`.artwork-card`);
+      cards.forEach(function (card) {
+        const cardSeries = card.getAttribute(`data-series`);
+        if (seriesKey === `all` || cardSeries === seriesKey) {
+          card.classList.remove(`is-hidden`);
+        } else {
+          card.classList.add(`is-hidden`);
+        }
+      });
+    }
+
+    /* Carga opcional de fotografía local para cada obra en Galería */
+    function loadArtworkImage(workIndex, inputEl) {
+      if (!inputEl || !inputEl.files || !inputEl.files[0]) return;
+      const file = inputEl.files[0];
+      const reader = new FileReader();
+      reader.onload = function (ev) {
+        const imgEl = document.getElementById(`img-work-` + workIndex);
+        if (imgEl && ev.target && typeof ev.target.result === `string`) {
+          imgEl.src = ev.target.result;
+          imgEl.classList.add(`has-file`);
+        }
+      };
+      reader.readAsDataURL(file);
+    }
+
+    /* Carga opcional de código QR personalizado */
+    function loadQrImage(imgId, inputEl) {
+      if (!inputEl || !inputEl.files || !inputEl.files[0]) return;
+      const file = inputEl.files[0];
+      const reader = new FileReader();
+      reader.onload = function (ev) {
+        const imgEl = document.getElementById(imgId);
+        if (imgEl && ev.target && typeof ev.target.result === `string`) {
+          imgEl.src = ev.target.result;
+          imgEl.classList.add(`has-file`);
+        }
+      };
+      reader.readAsDataURL(file);
+    }
+
+    /* Lightbox de Galería */
+    function openLightbox(workIndex) {
+      const work = GALLERY_WORKS[workIndex];
+      const backdrop = document.getElementById(`gallery-lightbox`);
+      if (!work || !backdrop) return;
+
+      currentLightboxIndex = workIndex;
+      const lbTitle = document.getElementById(`lb-title`);
+      const lbBadge = document.getElementById(`lb-badge`);
+      const lbDesc = document.getElementById(`lb-desc`);
+      const lbFicha = document.getElementById(`lb-ficha`);
+      const lbMediaHost = document.getElementById(`lb-media-host`);
+
+      if (lbTitle) lbTitle.textContent = work.title;
+      if (lbBadge) lbBadge.textContent = `Obra 0` + (work.index + 1) + ` · ` + work.format;
+      if (lbDesc) lbDesc.textContent = work.desc;
+
+      if (lbFicha) {
+        lbFicha.innerHTML =
+          `<li><span class="f-key">Archivo</span><span class="f-val">` + work.file + `</span></li>` +
+          `<li><span class="f-key">Formato</span><span class="f-val">` + work.format + `</span></li>` +
+          `<li><span class="f-key">Procedencia</span><span class="f-val">` + work.origin + `</span></li>` +
+          `<li><span class="f-key">Lugar</span><span class="f-val">` + work.place + `</span></li>` +
+          `<li><span class="f-key">Fecha</span><span class="f-val">` + work.date + `</span></li>`;
+      }
+
+      if (lbMediaHost) {
+        lbMediaHost.innerHTML = ``;
+        const uploadedImg = document.getElementById(`img-work-` + workIndex);
+        if (uploadedImg && uploadedImg.classList.contains(`has-file`) && uploadedImg.src) {
+          const cloneImg = document.createElement(`img`);
+          cloneImg.src = uploadedImg.src;
+          cloneImg.alt = work.title;
+          cloneImg.style.width = `100%`;
+          cloneImg.style.height = `100%`;
+          cloneImg.style.objectFit = `contain`;
+          lbMediaHost.appendChild(cloneImg);
+        } else {
+          const sourceImage = document.querySelectorAll(`.artwork-card`)[workIndex]?.querySelector(`.artwork-svg`);
+          if (sourceImage) {
+            const cloneImage = sourceImage.cloneNode(true);
+            cloneImage.style.maxHeight = `75vh`;
+            cloneImage.style.maxWidth = `100%`;
+            cloneImage.style.objectFit = `contain`;
+            lbMediaHost.appendChild(cloneImage);
+          }
+        }
+      }
+
+      backdrop.classList.add(`is-open`);
+      const closeBtn = document.getElementById(`lb-close-btn`);
+      if (closeBtn) closeBtn.focus();
+    }
+
+    function closeLightbox() {
+      const backdrop = document.getElementById(`gallery-lightbox`);
+      if (backdrop) backdrop.classList.remove(`is-open`);
+    }
+
+    function stepLightbox(delta) {
+      const next = (currentLightboxIndex + delta + GALLERY_WORKS.length) % GALLERY_WORKS.length;
+      openLightbox(next);
+    }
+
+    document.addEventListener(`keydown`, function (e) {
+      if (e.key === `Escape`) closeLightbox();
+    });
+
+    /* Copiar texto con feedback inline */
+    function copyTextValue(value, statusId) {
+      const statusEl = document.getElementById(statusId);
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(value).then(function () {
+          if (statusEl) statusEl.textContent = `Copiado: ` + value;
+        }).catch(function () {
+          if (statusEl) statusEl.textContent = `Valor seleccionado: ` + value;
+        });
+      } else if (statusEl) {
+        statusEl.textContent = `Valor seleccionado: ` + value;
+      }
+    }
+
+    /* ==================== REPRODUCTOR PRE-GALERÍA ("Invitación") ==================== */
+    const invState = {
+      playing: false,
+      audioOn: false,
+      hasCustomVideo: true,
+      duration: 45,
+      elapsed: 0,
+      lastTs: 0,
+      rafId: null,
+      particles: [],
+      audioCtx: null,
+      oscPad: null,
+      gainNode: null,
+      pulseTimer: null
+    };
+
+    function initParticles() {
+      invState.particles = [];
+      for (let i = 0; i < 42; i++) {
+        invState.particles.push({
+          x: Math.random(),
+          y: Math.random(),
+          r: 0.8 + Math.random() * 2.2,
+          vy: -0.00025 - Math.random() * 0.0005,
+          vx: (Math.random() - 0.5) * 0.0002,
+          alpha: 0.15 + Math.random() * 0.55
+        });
+      }
+    }
+
+    function formatClock(sec) {
+      const s = Math.max(0, Math.floor(sec));
+      const mm = String(Math.floor(s / 60)).padStart(2, `0`);
+      const ss = String(s % 60).padStart(2, `0`);
+      return mm + `:` + ss;
+    }
+
+    function drawInvitationFrame(ts) {
+      const canvas = document.getElementById(`invitation-canvas`);
+      if (!canvas) return;
+      const ctx = canvas.getContext(`2d`);
+      if (!ctx) return;
+
+      if (invState.playing) {
+        if (!invState.lastTs) invState.lastTs = ts;
+        const dt = (ts - invState.lastTs) / 1000;
+        invState.lastTs = ts;
+        invState.elapsed += dt;
+        if (invState.elapsed >= invState.duration) {
+          invState.elapsed = 0;
+        }
+      } else {
+        invState.lastTs = 0;
+      }
+
+      const w = canvas.width;
+      const h = canvas.height;
+      const progress = invState.elapsed / invState.duration;
+
+      /* Fondo atmosférico con paleta oficial */
+      const bgGrad = ctx.createRadialGradient(w * 0.5, h * 0.42, 30, w * 0.5, h * 0.5, w * 0.72);
+      bgGrad.addColorStop(0, `#1D2C3A`);
+      bgGrad.addColorStop(0.5, `#1A1412`);
+      bgGrad.addColorStop(1, `#100A08`);
+      ctx.fillStyle = bgGrad;
+      ctx.fillRect(0, 0, w, h);
+
+      /* Bruma en suspensión */
+      const mistRadius = 110 + Math.sin(progress * Math.PI * 6) * 28;
+      const mistGrad = ctx.createRadialGradient(w * 0.5, h * 0.48, 12, w * 0.5, h * 0.48, mistRadius * 2.1);
+      mistGrad.addColorStop(0, `rgba(240, 208, 48, 0.16)`);
+      mistGrad.addColorStop(0.55, `rgba(13, 87, 146, 0.12)`);
+      mistGrad.addColorStop(1, `rgba(16, 10, 8, 0)`);
+      ctx.fillStyle = mistGrad;
+      ctx.fillRect(0, 0, w, h);
+
+      /* Partículas doradas de bruma */
+      invState.particles.forEach(function (p) {
+        if (invState.playing) {
+          p.y += p.vy * 16;
+          p.x += p.vx * 16;
+          if (p.y < 0) p.y = 1;
+          if (p.x < 0) p.x = 1;
+          if (p.x > 1) p.x = 0;
+        }
+        ctx.beginPath();
+        ctx.arc(p.x * w, p.y * h, p.r, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(240, 208, 48, ` + p.alpha + `)`;
+        ctx.fill();
+      });
+
+      /* Líneas sutiles de tablero y horizonte */
+      ctx.strokeStyle = `rgba(240, 208, 48, 0.22)`;
+      ctx.lineWidth = 1;
+      ctx.beginPath();
+      ctx.moveTo(w * 0.15, h * 0.78);
+      ctx.lineTo(w * 0.85, h * 0.78);
+      ctx.stroke();
+
+      /* Frase breve sincronizada a la secuencia de 45s */
+      const captions = [
+        `DOS UNIVERSOS · UNA IDENTIDAD`,
+        `LA FRAGANCIA COMO JUGADA FINAL`,
+        `AURA Y ESTILO BY CÁRMIKA`
+      ];
+      const capIndex = Math.min(2, Math.floor(progress * 3));
+      ctx.fillStyle = `rgba(244, 239, 230, 0.82)`;
+      ctx.font = `italic 24px "Cormorant Garamond", Georgia, serif`;
+      ctx.textAlign = `center`;
+      ctx.fillText(captions[capIndex], w * 0.5, h * 0.72);
+
+      /* Actualizar barra de progreso si no hay video local cargado */
+      if (!invState.hasCustomVideo) {
+        const fill = document.getElementById(`inv-progress-fill`);
+        const readout = document.getElementById(`inv-time-readout`);
+        const track = document.getElementById(`inv-progress-track`);
+        if (fill) fill.style.width = (progress * 100).toFixed(2) + `%`;
+        if (readout) readout.textContent = formatClock(invState.elapsed) + ` / ` + formatClock(invState.duration);
+        if (track) track.setAttribute(`aria-valuenow`, String(Math.floor(invState.elapsed)));
+      }
+
+      if (invState.playing) {
+        invState.rafId = requestAnimationFrame(drawInvitationFrame);
+      }
+    }
+
+    function toggleInvitationPlay() {
+      const videoEl = document.getElementById(`custom-video-el`);
+      const label = document.getElementById(`play-inv-label`);
+      const overlay = document.getElementById(`video-overlay-brand`);
+
+      if (invState.hasCustomVideo && videoEl) {
+        if (videoEl.paused) {
+          videoEl.play();
+          if (label) label.textContent = `Pausar`;
+          if (overlay) overlay.classList.add(`is-playing`);
+        } else {
+          videoEl.pause();
+          if (label) label.textContent = `Reproducir`;
+          if (overlay) overlay.classList.remove(`is-playing`);
+        }
+        return;
+      }
+
+      if (invState.playing) {
+        stopInvitationPlayback();
+      } else {
+        invState.playing = true;
+        if (label) label.textContent = `Pausar`;
+        if (overlay) overlay.classList.add(`is-playing`);
+        if (invState.audioOn) startAmbientSynth();
+        cancelAnimationFrame(invState.rafId);
+        invState.rafId = requestAnimationFrame(drawInvitationFrame);
+      }
+    }
+
+    function stopInvitationPlayback() {
+      invState.playing = false;
+      cancelAnimationFrame(invState.rafId);
+      stopAmbientSynth();
+      const label = document.getElementById(`play-inv-label`);
+      const overlay = document.getElementById(`video-overlay-brand`);
+      if (label) label.textContent = `Reproducir`;
+      if (overlay) overlay.classList.remove(`is-playing`);
+    }
+
+    function seekInvitation(event) {
+      const track = document.getElementById(`inv-progress-track`);
+      if (!track) return;
+      const rect = track.getBoundingClientRect();
+      const ratio = Math.max(0, Math.min(1, (event.clientX - rect.left) / rect.width));
+      const videoEl = document.getElementById(`custom-video-el`);
+
+      if (invState.hasCustomVideo && videoEl && videoEl.duration) {
+        videoEl.currentTime = ratio * videoEl.duration;
+      } else {
+        invState.elapsed = ratio * invState.duration;
+        drawInvitationFrame(performance.now());
+      }
+    }
+
+    function startAmbientSynth() {
+      try {
+        const AudioCtx = window.AudioContext || window.webkitAudioContext;
+        if (!AudioCtx) return;
+        if (!invState.audioCtx) invState.audioCtx = new AudioCtx();
+        if (invState.audioCtx.state === `suspended`) invState.audioCtx.resume();
+        if (invState.oscPad) return;
+
+        const osc = invState.audioCtx.createOscillator();
+        const gain = invState.audioCtx.createGain();
+        osc.type = `sine`;
+        osc.frequency.setValueAtTime(110, invState.audioCtx.currentTime);
+        gain.gain.setValueAtTime(0.035, invState.audioCtx.currentTime);
+        osc.connect(gain);
+        gain.connect(invState.audioCtx.destination);
+        osc.start();
+        invState.oscPad = osc;
+        invState.gainNode = gain;
+      } catch (err) {
+        /* Audio opcional bloqueado por navegador */
+      }
+    }
+
+    function stopAmbientSynth() {
+      if (invState.oscPad) {
+        try { invState.oscPad.stop(); } catch (err) {}
+        invState.oscPad = null;
+      }
+    }
+
+    function toggleInvitationAudio() {
+      invState.audioOn = !invState.audioOn;
+      const btn = document.getElementById(`btn-audio-inv`);
+      const label = document.getElementById(`audio-inv-label`);
+      const videoEl = document.getElementById(`custom-video-el`);
+
+      if (btn) btn.setAttribute(`aria-pressed`, String(invState.audioOn));
+      if (label) label.textContent = invState.audioOn ? `Sonido: On` : `Sonido: Off`;
+
+      if (invState.hasCustomVideo && videoEl) {
+        videoEl.muted = !invState.audioOn;
+        return;
+      }
+
+      if (invState.audioOn && invState.playing) {
+        startAmbientSynth();
+      } else {
+        stopAmbientSynth();
+      }
+    }
+
+    function handleLocalVideo(inputEl) {
+      if (!inputEl || !inputEl.files || !inputEl.files[0]) return;
+      const videoEl = document.getElementById(`custom-video-el`);
+      const overlay = document.getElementById(`video-overlay-brand`);
+      if (!videoEl) return;
+
+      stopInvitationPlayback();
+      const url = URL.createObjectURL(inputEl.files[0]);
+      videoEl.src = url;
+      videoEl.classList.add(`is-loaded`);
+      invState.hasCustomVideo = true;
+      if (overlay) overlay.style.display = `none`;
+      videoEl.play().catch(function () {});
+      const label = document.getElementById(`play-inv-label`);
+      if (label) label.textContent = `Pausar`;
+    }
+
+    /* Inicialización */
+    (function init() {
+      initParticles();
+      drawInvitationFrame(performance.now());
+    })();
+  </script>
+</body>
+</html>

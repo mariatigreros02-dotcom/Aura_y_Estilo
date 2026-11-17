@@ -1,0 +1,1 @@
+Abre index.html. Conserva las carpetas css, images y videos. La portada apunta a videos/invitacion.mp4; coloca allí tu video original con ese nombre. Las cinco obras apuntan a images/encaje.svg, images/parte-del-conjunto.svg, images/reflejos.svg, images/diferencias.svg e images/teje-un-destino.svg.

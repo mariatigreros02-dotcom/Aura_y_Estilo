@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500">
+<rect width="500" height="500" fill="#fff"/>
+<g fill="#17110f">
+<rect x="35" y="35" width="120" height="120"/><rect x="55" y="55" width="80" height="80" fill="#fff"/><rect x="75" y="75" width="40" height="40"/>
+<rect x="345" y="35" width="120" height="120"/><rect x="365" y="55" width="80" height="80" fill="#fff"/><rect x="385" y="75" width="40" height="40"/>
+<rect x="35" y="345" width="120" height="120"/><rect x="55" y="365" width="80" height="80" fill="#fff"/><rect x="75" y="385" width="40" height="40"/>
+<path d="M190 40h35v35h-35z M250 40h25v55h-25z M190 100h55v25h-55z M290 190h35v35h-35z M350 190h25v25h-25z M410 190h45v30h-45z M190 260h30v45h-30z M245 250h45v30h-45z M315 260h25v25h-25z M380 255h70v25h-70z M190 330h40v25h-40z M250 350h25v60h-25z M300 330h35v35h-35z M360 320h30v50h-30z M420 350h35v35h-35z M190 420h45v30h-45z M285 420h40v30h-40z M345 410h25v50h-25z"/>
+</g>
+<text x="250" y="490" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#555">CATÁLOGO · PLACEHOLDER, NO ESCANEAR</text>
+</svg>
